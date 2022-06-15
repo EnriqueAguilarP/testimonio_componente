@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styleSheets/testimonio.css';
 function Testimonio(){
   return(
     <div className = 'contenedor-testimonio'>
@@ -16,3 +17,5 @@ function Testimonio(){
     </div>
   );
 }
+
+export default Testimonio;
