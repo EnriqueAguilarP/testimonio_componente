@@ -1,17 +1,20 @@
 import React from 'react';
 import '../styleSheets/testimonio.css';
-function Testimonio(){
+function Testimonio(props){
   return(
     <div className = 'contenedor-testimonio'>
       <img 
       className='imagen-testimonio' 
-      src={require('../imagenes/enchiladas.jpg')}
+      src={require(`../imagenes/${props.imagen}.jpg`)}
       alt='Foto de comida'
       />
       <div className='contenedor-texto'>
-        <p className='nombre-testimonio'>Nombre del platillo</p>
-        <p className='ingredientes'>ingredientes</p>
-        <p className="texto-testimonio">Pasta, leche, crema</p>
+        <p className='nombre-testimonio'>
+          <strong>{props.nombre}</strong>
+          </p>
+        <p className='ingredientes'>Ingredientes: </p>
+        <p className="texto-testimonio">{props.ingredientes}</p>
+        <p className='url'>{props.url}</p>
       </div>
 
     </div>
