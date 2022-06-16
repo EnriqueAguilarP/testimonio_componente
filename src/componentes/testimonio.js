@@ -14,7 +14,6 @@ function Testimonio(props){
           </p>
         <p className='ingredientes'>Ingredientes: </p>
         <p className="texto-testimonio">{props.ingredientes}</p>
-        <p className='url'>{props.url}</p>
       </div>
 
     </div>
